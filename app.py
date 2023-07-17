@@ -10,5 +10,9 @@ def index():
 def delete():
     return jsonify ({"payload":"delete successfully"})
 
+@app.route("/create", methods=["POST"])
+def delete():
+    return jsonify ({"payload":"create successfully"})
+
 if __name__ == '__main__':
     app.run(debug=True)
