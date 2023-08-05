@@ -13,6 +13,10 @@ def delete():
 @app.route("/create", methods=["POST"])
 def delete():
     return jsonify ({"payload":"create successfully"})
-
+    
+@app.route("/put", methods=["PUT"])
+def delete():
+    return jsonify ({"payload":"put successfully"})
+    
 if __name__ == '__main__':
     app.run(debug=True)
