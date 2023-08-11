@@ -18,5 +18,9 @@ def delete():
 def delete():
     return jsonify ({"payload":"put successfully"})
     
+@app.route("/init", methods=["GET"])
+def delete():
+    return jsonify ({"payload":"hack-1 finished"})
+    
 if __name__ == '__main__':
     app.run(debug=True)
